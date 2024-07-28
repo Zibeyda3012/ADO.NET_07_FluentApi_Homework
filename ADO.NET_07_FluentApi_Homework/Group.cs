@@ -12,4 +12,11 @@ public class Group
 
     public List<Student> Students { get; set; } = [];
 
+    //foreign key
+    public int TeacherId { get; set; }
+
+    //navigation property
+
+    public Teacher? Teacher { get; set; }    
+
 }

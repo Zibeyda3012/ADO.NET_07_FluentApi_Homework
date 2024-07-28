@@ -7,7 +7,7 @@ public class Teacher
 
     public string? FirstName { get; set; }
 
-    public string LastName { get; set; }
+    public string? LastName { get; set; }
 
     public DateOnly EmploymentDate { get; set; }
 
@@ -16,6 +16,13 @@ public class Teacher
     public decimal Premium { get; set; }
 
     public List<Group> Groups { get; set; } = [];
+
+
+    //foreigh key
+    public int DepartmentId {  get; set; }
+
+    //navigation property
+    public Department? Department { get; set; }
 
 
 }

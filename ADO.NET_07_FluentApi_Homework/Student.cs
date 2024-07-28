@@ -7,5 +7,17 @@ public class Student
     public string? FirstName { get; set; }
 
     public string? LastName { get; set; }
+
+    //foreign keys
+
+    public int FacultyId { get; set; }  
+
+    public int GroupId { get; set; }    
+
+
+    //navigation property
+    public Faculty? Faculty { get; set; }
+
+    public Group? Group { get; set; }
    
 }
